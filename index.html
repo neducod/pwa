@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA | API</title>
+    <link rel="shortcut icon" href="./image/J.png" type="image/x-icon">
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./output.css">
+    <!-- THREE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+    <!-- Manufacturing Consent: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
+<!-- Roboto Condensed -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="mr-10">
+            <h1 id="h1"> Naija Utility Hub</h1>
+            <p id="p">"Live weather, currency & news — all based on your location"</p>
+            <div id="second-div" class="flex gap-10">
+                <button>Get Started</button>
+                <a href="./learn.html">Learn More</a>
+            </div>
+        </div>
+    </header>
+    <div class="flex gap-10" id="about-head">
+        <div id="about">
+            <div class="card"></div>
+            <div class="glass">
+                <h2>🌦️ Weather Updates</h2>
+                <p>Get live weather updates for your city.</p>
+            </div>
+            <div class="content"></div>
+        </div>
+        <div id="about">
+            <div class="card"></div>
+            <div class="glass">
+                <h2>💱 Currency Rates</h2>
+                <p>Track naira exchange rates in real time.</p>
+            </div>
+            <div class="content"></div>
+        </div>
+        <div id="about">
+            <div class="card"></div>
+            <div class="glass">
+                <h2>📰 Local News</h2>
+                <p>Read trending headlines in your location.</p>
+            </div>
+            <div class="content"></div>
+        </div>
+        <div id="about">
+            <div class="card"></div>
+            <div class="glass">
+                <h2>📍 Location Info</h2>
+                <p>See what’s happening around your current area.</p>
+            </div>
+            <div class="content"></div>
+        </div>
+    </div>
+    <div id="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31386.994785194653!2d7.440289899999999!3d10.471126799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d359dc3778389%3A0x8d262baff15aeb5f!2sBarnawa%2C%20Kaduna!5e0!3m2!1sen!2sng!4v1752317952410!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="flex gap-20 justify-center items-center" id="frame-101">
+        <h3 class="cardd zoom-in">✅ Works offline</h3>
+        <h3 class="cardd zoom-in">✅ Super fast</h3>
+        <h3 class="cardd zoom-in">✅ Add to your home screen like a real app</h3>
+    </div>
+    <footer>
+        <div>
+            <!-- ALL MY SOCIAL MEDIA ACCOUNT -->
+        </div>
+        <div id="footerp">
+            <p>Built with creativity and love 💚 by <a href="https://x.com/nedu_nony">Josephine Jerome °˖°</a></p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+<script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 1000);
+    camera.position.z = 5;
+  
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(300, 300); // match your container
+    document.getElementById('three-container').appendChild(renderer.domElement);
+  
+    // Create a soft glowing orb
+    const geometry = new THREE.SphereGeometry(1, 64, 64);
+    const material = new THREE.MeshPhysicalMaterial({
+      color: 0x88ccff,
+      transmission: 1, // makes it glass-like
+      thickness: 0.5,
+      roughness: 0.1,
+      metalness: 0.1,
+      clearcoat: 1,
+      clearcoatRoughness: 0.1,
+    });
+    const sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
+  
+    // Add soft lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(ambientLight);
+  
+    const pointLight = new THREE.PointLight(0x88ccff, 1);
+    pointLight.position.set(2, 2, 3);
+    scene.add(pointLight);
+  
+    // Animate the orb
+    function animate() {
+      requestAnimationFrame(animate);
+      sphere.rotation.y += 0.01;
+      sphere.position.y = Math.sin(Date.now() * 0.002) * 0.1; // cute float
+      renderer.render(scene, camera);
+    }
+  
+    animate();
+  </script>  
+</body>
+</html>
