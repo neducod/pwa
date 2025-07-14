@@ -91,11 +91,13 @@ form{
 #email:focus {
     border-bottom: 2px solid #5b5fc7;
     border-radius: 4px 4px 2px 2px;
+
+    /* background-color: rgb(50, 155, 190); */
   
 }  
 #email:hover {
     outline: 1px solid lightgrey;
-  }
+}
 
 #btn{
     width: 370px;
