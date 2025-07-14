@@ -271,7 +271,8 @@ header img{
 #hero{
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    margin: 100px;
+    /* flex-direction: column; */
 }
 #hero-one{
     width: 220px;
@@ -280,7 +281,7 @@ header img{
     background-color: rgb(207, 204, 204);
 }
 #hero-one p{
-    text-align: center; 
+    /* text-align: center;  */
     font-size: 14px;
 }
 #hero-text h2{
