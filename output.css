@@ -292,3 +292,25 @@ header img{
     width: 400px;
     margin: 10px;
 }
+/*  */
+#frame-202{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+#frame-202 h3{
+    font-size: 26px;
+    margin-left: 150px;
+}
+#frame-202 #pp{
+    width: 600px;
+    margin-left: 150px;
+}
+#about-head-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px; 
+}
