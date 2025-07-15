@@ -315,3 +315,7 @@ header img{
     flex-direction: row;
     margin-top: 30px; 
 }
+footer{
+    place-items: center;
+    gap: 50px;
+}
