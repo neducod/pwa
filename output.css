@@ -252,11 +252,14 @@ footer{
     START OF A NEW ERA
 */
 
-
+body{
+    background: linear-gradient(to right, #555543e3, #2a5216);
+}
 
 header{
     align-items: center;
-    background-color: #66BB6A;
+    background: linear-gradient(to right, #555543e3, #2a5216);
+    /* background-color: #66BB6A; */
     height: 90px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -275,10 +278,11 @@ header img{
     /* height: 400px; */
     margin: auto;
 
-
+    align-items: center;
     margin: 0;
-    height: 100vh;
-    background: linear-gradient(to right, #c0c06b, #ae7979); /* dark green-black to black */
+    height: 87vh;
+    /* height: 100vh; */
+    /* background: linear-gradient(to right, #555543e3, #2a5216); */
     position: relative;
     overflow: hidden;
 }
@@ -305,11 +309,10 @@ header img{
   }
 /*  */
 #frame-202{
+    /* width: 1000px; */
+    place-self: center;
+    /* background-color: #ae7979; */
     margin: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
 }
 #frame-202 h3{
     font-size: 26px;
@@ -323,8 +326,17 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 30px; 
+
+
+    width: 1000px;
+    padding: 25px;
+    background-color: transparent;
+    /* background-color: #c0c06b; */
+
+ box-shadow: 20px 20px 60px #2a5216,
+ -20px -20px 60px #555543e3 ;
 }
 footer{
     place-items: center;
@@ -338,12 +350,20 @@ footer{
 /*  */
 #about-2{
     height: 100%;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
   transition: all 0.5s ease-in-out;
   transform-style: preserve-3d;
   box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+
+
+    padding: 20px;
+    overflow: visible;
+    border-radius: 5px;
 }
+
+
+
 #about-2:hover{
     transform: rotate3d(1, 1, 0, 30deg);
     box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
