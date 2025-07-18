@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#frame-101{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+} 
+form{
+    width: 420px;
+    height: 500px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: linear-gradient(to right, rgb(33, 66, 32), rgb(57, 98, 57), rgb(179, 228, 179));
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+#logic-btn{
+    width: 370px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 10px 20px -18px;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+#logic-btn:hover {
+    outline: 1px solid lightgrey;
+    transform: scale(1.05) translateX(10px);
+}
+form p a{
+    color: black;
+}
+form p a:hover{
+    color: pink;
+    text-decoration: none;
+}
+
+
+
+/* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    /* width: 100%; */
+    width: 370px;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    /* border: none; */
+    /* border-bottom: 2px solid #ccc; */
+    border: 2px solid black;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #b43ecb;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 15px;
+    color: black;
+    /* color: #007bff; */
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+  

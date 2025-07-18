@@ -8,8 +8,7 @@
 
     <link rel="shortcut icon" href="../image/J.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./login.css">
-
+    <link rel="stylesheet" href="./alogin.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close_small" />
 
@@ -18,25 +17,28 @@
 </head>
 <body>
     <div id="frame-101">
-        <!-- <img src="../image/stylized-green-sketch-map-nigeria-600nw-1143979868.webp" alt=""> -->
         <form action="" method="get" class="flex justify-center items-center flex-col gap-4" id="login-form">
             <div>
-                <h1 class="text-xl">Log into your account</h1>
+                <h1 class="text-xl">Log into your account!</h1>
             </div>
-            <!-- <div>
-                <label for="text">username</label> <br>
-                <input type="text" id="username" usernameutocomplete="username">
+            <!-- <div class="input-container">
+                <input type="email" id="email" class="input-field" autocomplete="email" placeholder="Enter email">
+                <label for="email" for="input-field" for="input-label">Email</label>
+                <span class="input-highlight"></span>
             </div> -->
-            <div>
-                <label for="email">Email</label> <br>
-                <input type="email" id="email" autocomplete="username">
+            <div class="input-container">
+                <input type="email" autocomplete="complete-email" placeholder="Enter Email" class="input-field">
+                <label for="password" for="input-field" class="input-label">Email</label>
+                <span class="input-highlight"></span>
             </div>
-            <div>
-                <label for="password">Password</label> <br>
-                <input type="password" id="password" autocomplete="complete-password">
+            <div class="input-container">
+                <input type="password" id="password" autocomplete="complete-password" placeholder="Enter password" class="input-field">
+                <label for="password" for="input-field" class="input-label">Password</label>
+                <span class="input-highlight"></span>
             </div>
             <button id="logic-btn" type="submit">Login</button>
-            <p>Don't have an account? <a href="./login.html" class="hover:text-black-700 hover:underline hover:text-pink-700">Get access</a></p>
+            <p>Don't have an account? <a href="./login.html" class=" text-black-400  hover:text-black-700 hover:underline hover:text-pink-700">Get access</a></p>
+            <a href="./index.html">gfdsdfg</a>
         </form>
         <p id="error-message" style="color: red;"></p>
         <div id="toast" class="fixed top-4 right-4 z-50 hidden px-4 py-3 rounded shadow text-white text-sm"></div>
