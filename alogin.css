@@ -87,14 +87,14 @@ form p a:hover{
     left: 0;
     height: 2px;
     width: 0;
-    background-color: #b43ecb;
+    background-color: pink;
     transition: all 0.3s ease;
   }
   
   /* Input field:focus styles */
   .input-field:focus + .input-label {
     top: -20px;
-    font-size: 15px;
+    font-size: 17px;
     color: black;
     /* color: #007bff; */
   }
