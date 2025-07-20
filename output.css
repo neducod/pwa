@@ -394,22 +394,29 @@ header img{
 
 
 /*  */
-.frame-303{
+#frame-303{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 180px;
-    background-color: #EADDCA;
+    background-color: #a49b8c; 
+    /* background-color: #EADDCA; */
+
+
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
 }
-.frame-303 h3{
+#frame-303 h3{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
     font-size: 40px;
 }
-.frame-303 p{
+#frame-303 p{
     width: 550px;
 }
 #frame-303-wrapper{
