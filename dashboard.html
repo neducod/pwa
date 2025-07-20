@@ -53,7 +53,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script type="module" src="./js/db.js"></script>
     <script>
-
+/*
 const map = L.map("map").setView([9.082, 8.6753], 6);
 
 // Add tile layeer
@@ -73,8 +73,57 @@ const map = L.map("map").setView([9.082, 8.6753], 6);
       .bindPopup("You're here 👋")
       .openPopup();
  });
+*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  const map = L.map("map").setView([9.082, 8.6753], 6);
+
+// // Add tile layer
+// L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//   maxZoom: 18,
+//   attribution:
+//     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+// }).addTo(map);
+
+// // Use Leaflet's built-in geolocation method
+// map.locate({ setView: true, maxZoom: 13 });
+
+// map.on("locationfound", function (e) {
+//   L.marker(e.latlng)
+//     .addTo(map)
+//     .bindPopup("📍 You're here!")
+//     .openPopup();
+// });
+
+// map.on("locationerror", function (e) {
+//   console.error("Geolocation error:", e.message);
+//   alert("Could not get your location: " + e.message);
+// });
+
+
+
+L.marker([6.5244, 3.3792]) // Lagos
+  .addTo(map)
+  .bindPopup("Test Marker in Lagos")
+  .openPopup();
+
+
+/*
  if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     (position) => {
@@ -98,6 +147,7 @@ const map = L.map("map").setView([9.082, 8.6753], 6);
 } else {
   alert("Geolocation is not supported by your browser.");
 }
+*/
 
     </script>
 </body>
