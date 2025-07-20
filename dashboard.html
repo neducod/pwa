@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA | API</title>
+    <link rel="shortcut icon" href="./image/J.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./dashboard.css">
+
+    <!-- LEAFLET -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+<body>
+    <header class="flex justify-center gap-50 pt-7 pb-5">
+        <div class="flex gap-2">
+            <h1 class="text-center">PWA/API</h1>
+        </div>
+        <div id="list">
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Showcase</a></li>
+            <li><a href="#">Support</a></li>
+        </div>
+        <div class="flex gap-10">
+            <a href="./login.html">Sign Up</a>
+            <a href="./alogin.html">Login</a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="flex flex-col md:flex-row h-[calc(100%-64px)]" id="main-content">
+        <!--Map section -->
+        <div>
+            <div id="map"></div>
+        </div> 
+        <aside class="w-full md:w-[350px] bg-white border-l md:border-t-0 border-t border-gray-200 p-4 overflow-y-auto">
+            <h2 class="text-lg font-semibold mb-3">📍 Location Info</h2>
+            <p><strong>Location:</strong> Surulere, Lagos</p>
+            <p><strong>Weather:</strong> 28°C, Sunny ☀️</p>
+            <p><strong>News:</strong> "Governor commissions new road"</p>
+            <p><strong>Exchange Rate:</strong> 1 USD = 1532 NGN</p>
+        </aside>
+    </div>
+
+
+
+
+<!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="./js/db.js"></script>
+ -->
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([6.5244, 3.3792], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+
+    L.marker([6.5244, 3.3792])
+      .addTo(map)
+      .bindPopup('Lagos, Nigeria')
+      .openPopup();
+  </script>
+</body>
+</html>
