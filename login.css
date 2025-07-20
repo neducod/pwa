@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(253, 252, 252);
+}
+#frame-101{
+    /* background:url(../image/world-map-dot-distribution-map-globe-dotted-line-782a6f5de491176c65630b3bf8858bc5.png); */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+} 
+form{
+    /* width: 350px; */
+    width: 420px;
+    height: 500px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    /* background-color: brown; */
+    /* background: linear-gradient(to right, #000000, #1c1c1c, #3a2b28); */
+    /* background: linear-gradient(to right, rgb(33, 66, 32), rgb(57, 98, 57), rgb(179, 228, 179)); */
+    background: linear-gradient(to right, #162e52, #6b97c0);
+
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;  */
+
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+
+}
+#btns img{
+    width: 25px;
+    place-self: center;
+}
+#btns button{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgba(56, 55, 55, 0.835);
+    transition: all 0.5s ease-in;
+}
+#names{
+    border: 2px solid #ccc; 
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    /* border: none; */
+    line-height: 1.9;
+    color: white;
+    /* color: rgb(21, 21, 21); */
+
+    box-shadow: 0px 10px 20px -18px;
+
+    /* background-color: #f5f5f5; */
+    cursor: pointer;
+}
+#names:focus {
+    /* border-color: #96c1a2;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); */
+
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  
+}  
+#names:hover {
+    outline: 1px solid lightgrey;
+  }
+#email{
+    width: 370px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    height: 45px;
+    color: white;
+    /* color: rgb(21, 21, 21); */
+    /* background-color: #f5f5f5; */
+    box-shadow: 0px 10px 20px -18px;
+    cursor: pointer;
+}
+#email:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+
+    /* background-color: rgb(50, 155, 190); */
+  
+}  
+#email:hover {
+    outline: 1px solid lightgrey;
+}
+
+#logic-btn{
+    width: 370px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 10px 20px -18px;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+#logic-btn:hover {
+    outline: 1px solid lightgrey;
+
+        transform: scale(1.05) translateX(10px);
+}
