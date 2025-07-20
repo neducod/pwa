@@ -253,15 +253,24 @@ footer{
 */
 
 body{
-    background: linear-gradient(to right, #555543e3, #2a5216);
+
+
+    background: linear-gradient(to right, #162e52, #6b97c0);
+    /* background: linear-gradient(to right, #555543e3, #2a5216); */
 }
 
 header{
     align-items: center;
-    background: linear-gradient(to right, #555543e3, #2a5216);
-    /* background-color: #66BB6A; */
+     background: linear-gradient(to right, #162e52, #6b97c0); 
+
+
+
     height: 90px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    width: 100%;
+    z-index: 1;
+    position: fixed;
 }
 header img{
     width: 60px;
@@ -275,30 +284,106 @@ header img{
 }
 /*  */
 #hero{
-    /* height: 400px; */
     margin: auto;
-
     align-items: center;
-    margin: 0;
-    height: 87vh;
-    /* height: 100vh; */
-    /* background: linear-gradient(to right, #555543e3, #2a5216); */
+    height: 87vh; 
+    padding-top: 180px;
     position: relative;
     overflow: hidden;
+    /* flex-direction: column; */
 }
 #hero-text{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    margin: 60px;
 }
 #hero-text h2{
     font-size: 60px;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 #hero-text p{
-    font-size: 14px;
+    font-size: 15px;
     width: 500px;
 }
+#hero-one{
+    max-width: 190px; 
+    padding: 9px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    color: dimgray;
+    background-color: white;
+
+    transition: all 0.3s ease;
+}
+#hero-one:hover{
+    transform: scale(1.05);
+}
+#hero-one p{
+    font-size: 12px;
+}
+.side-box-parent{
+    display: flex;
+    gap: 90px;
+    margin: 20px;
+    flex-direction: column;
+}
+.side-box{
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    cursor: pointer;
+    transition: all .3s;
+    place-items: center;
+}
+.side-box:hover {
+    transform: scale(0.9);
+}
+.hero-email{
+    margin: 50px;
+}
+.hero-email button{
+    font-size: 12px;
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: rgb(227, 213, 255);
+}
+.InputContainer {
+    width: 410px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+  
+  .input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+  }
+    
 /*  */
 .body {
     margin: 0;
